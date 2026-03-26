@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="banner">
+    <section class="banner parallax" data-speed="0.1">
         <nav class="navbar">
             <a href="#contexto" class="nav-link">Contexto</a>
             <a href="#projetos" class="nav-link">Projetos</a>
@@ -33,7 +33,7 @@
     </div>
 
     <main>
-        <section id="contexto" class="section">
+        <section id="contexto" class="section reveal">
             <div class="section-container">
                 <h2 class="section-title">Contexto</h2>
                 <div class="context-block">
@@ -48,10 +48,10 @@
             </div>
         </section>
 
-        <section id="projetos" class="section">
+        <section id="projetos" class="section reveal">
             <div class="section-container">
                 <h2 class="section-title">Projetos</h2>
-                <div class="projects-grid">
+                <div class="projects-grid cascade-group">
                     <div class="project-card">
                         <h3 class="project-title">Sistema de Cadastro com Supabase</h3>
                         <div class="project-detail">
@@ -89,10 +89,10 @@
             </div>
         </section>
 
-        <section id="abordagem" class="section">
+        <section id="abordagem" class="section reveal">
             <div class="section-container">
                 <h2 class="section-title">Forma de pensar</h2>
-                <div class="approach-grid">
+                <div class="approach-grid cascade-group">
                     <div class="approach-card">
                         <h3 class="approach-title">Organização</h3>
                         <p class="approach-text">Estruturação de informações de forma lógica e acessível, reduzindo ruídos e facilitando consultas.</p>
@@ -109,10 +109,10 @@
             </div>
         </section>
 
-        <section id="habilidades" class="section">
+        <section id="habilidades" class="section reveal">
             <div class="section-container">
                 <h2 class="section-title">Habilidades</h2>
-                <div class="skills-wrapper">
+                <div class="skills-wrapper cascade-group">
                     <div class="skills-group">
                         <h3 class="skills-group-title">Tecnologia</h3>
                         <ul class="skills-list">
@@ -135,10 +135,10 @@
             </div>
         </section>
 
-        <section id="contato" class="section">
+        <section id="contato" class="section reveal">
             <div class="section-container">
                 <h2 class="section-title">Contato</h2>
-                <div class="contact-links">
+                <div class="contact-links cascade-group">
                     <a href="https://github.com/erickcationi" target="_blank" class="contact-link">GitHub</a>
                     <a href="https://www.linkedin.com/in/erickcationi" target="_blank" class="contact-link">LinkedIn</a>
                     <a href="mailto:erickcationi17@gmail.com" class="contact-link">erickcationi17@gmail.com</a>
@@ -152,5 +152,7 @@
             <p>Erick Cationi Cardoso</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

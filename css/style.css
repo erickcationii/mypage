@@ -52,21 +52,6 @@ body {
     color: #000000;
 }
 
-/* Foto quadrada estilo LinkedIn - canto superior esquerdo */
-.profile-photo {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    z-index: 10;
-}
-
-.profile-photo img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 1px solid #e8e8e8;
-}
-
 /* Conteúdo central do banner */
 .banner-content {
     max-width: 900px;
@@ -99,9 +84,31 @@ body {
     line-height: 1.6;
 }
 
+/* ========== FOTO ENTRE BANNER E CONTEÚDO ========== */
+.profile-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 5;
+}
+
+.profile-photo {
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+}
+
+.profile-photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+}
+
 /* ========== SEÇÕES GERAIS ========== */
 .section {
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
     border-bottom: 1px solid #eaeaea;
 }
 
@@ -290,16 +297,6 @@ body {
         font-size: 0.75rem;
     }
     
-    .profile-photo {
-        top: 1.5rem;
-        left: 1.5rem;
-    }
-    
-    .profile-photo img {
-        width: 100px;
-        height: 100px;
-    }
-    
     .banner-title {
         font-size: 2.5rem;
     }
@@ -310,6 +307,19 @@ body {
     
     .banner-description {
         font-size: 1rem;
+    }
+    
+    .profile-wrapper {
+        padding: 0 1.5rem;
+    }
+    
+    .profile-photo {
+        margin-top: -2rem;
+    }
+    
+    .profile-photo img {
+        width: 120px;
+        height: 120px;
     }
     
     .projects-grid {
@@ -328,7 +338,7 @@ body {
     }
     
     .section {
-        padding: 4rem 1.5rem;
+        padding: 3rem 1.5rem;
     }
     
     .section-title {
@@ -348,18 +358,13 @@ body {
         font-size: 0.7rem;
     }
     
-    .profile-photo {
-        top: 1rem;
-        left: 1rem;
+    .banner-title {
+        font-size: 1.75rem;
     }
     
     .profile-photo img {
-        width: 70px;
-        height: 70px;
-    }
-    
-    .banner-title {
-        font-size: 1.75rem;
+        width: 100px;
+        height: 100px;
     }
     
     .contact-links {

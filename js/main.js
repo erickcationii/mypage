@@ -1,7 +1,7 @@
-// ========== SCROLL REVEAL COM INTERSECTION OBSERVER ==========
 class ScrollReveal {
     constructor() {
-        this.elements = document.querySelectorAll('.reveal');
+        // Seleciona tanto as seções normais quanto os grupos de grid
+        this.elements = document.querySelectorAll('.reveal, .cascade-group');
         this.init();
     }
 
@@ -9,7 +9,16 @@ class ScrollReveal {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('revealed');
+                    // Se for uma seção comum (.reveal)
+                    if (entry.target.classList.contains('reveal')) {
+                        entry.target.classList.add('revealed');
+                    }
+                    
+                    // Se for um grupo de cards (.cascade-group)
+                    if (entry.target.classList.contains('cascade-group')) {
+                        entry.target.classList.add('reveal-cascade');
+                    }
+
                     observer.unobserve(entry.target);
                 }
             });
